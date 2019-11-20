@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class PropertiesConfig {
   
   @Value("${toutiao.infourl}")
-  public String toutaoUrl;
+  private  String toutaoUrl;
 
   
   public String getToutaoUrl() {

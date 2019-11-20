@@ -29,8 +29,9 @@ public class TouTiaoController {
    * @return
    */
   @RequestMapping(value = "/getinfos",method = {RequestMethod.GET},produces ="application/json;chartset=UTF-8")
-  public static ResponseEntity<JSONArray> getAccessControl(){
+  public  ResponseEntity<JSONArray> getAccessControl(){
     String getUrl ="https://www.toutiao.com/api/pc/feed/?min_behot_time=0&category=__all__&utm_source=toutiao&widen=1&tadrequire=true&as=A1856D8C9C5C702&cp=5DCC0C27D0A2BE1&_signature=UST5XAAgEBNbnJcCB.45d1Ek-UAAAzp";
+    getUrl = propertiesConfig.getToutaoUrl();
     JSONArray jsonObjectTargets = new JSONArray();
     HttpGet httpGet = new HttpGet(getUrl);
     httpGet.setHeader("Accept", "application/json");
