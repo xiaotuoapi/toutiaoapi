@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.jofiy</groupId>
 	<artifactId>gaogao</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>gaogao</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -61,4 +61,5 @@
 		</plugins>
 	</build>
 
+	<packaging>war</packaging>
 </project>
